@@ -1,0 +1,27 @@
+---
+title: "Test"
+author: "clement-tourbez"
+date: "21/06/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+SciViews::R
+```
+
+```{r data}
+
+st_info <- read("../DATA/station_information.rds")
+head(st_info)
+
+```
+
+
+
+```{r}
+chart(st_info, altitude~ station) + geom_point()
+```
+
+
+
+
