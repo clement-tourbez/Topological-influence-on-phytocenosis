@@ -9,8 +9,8 @@ SciViews::R
 
 
 (sample <- as_dataframe(tibble(
-  species = c("Quercus_rubra","Quercus petraea"),
-  station_1_a = c(2,1),Station_1_b = c(NA,1),Station_1_c = c(NA,NA)
+  species = c("Acer_pseudoplatanus","Alnus_glutinosa","Betula_pendula","Betula_pubescent","Carpinus_betulus","Castanea_sativa","Corylus_avellana","Fagus_sylvatica","Fraxinus_excelsior","Ilex_aquifolium","Pinus_sylvestris","Populus_nigra","Prunus_avium","Sorbus_aucuparia","TAxus_baccata","Quercus_petraea","Quercus_robur","Quercus_rubra"),
+  "1A" = c(2,1), "1B" = c(NA,1), "1C" = c(NA,NA)
 )))
 
 pander::pander(sample,
