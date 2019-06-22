@@ -9,9 +9,9 @@ SciViews::R
 
 
 (sample <- as_dataframe(tibble(
-  species = c("Acer_pseudoplatanus","Alnus_glutinosa","Betula_pendula","Betula_pubescent","Carpinus_betulus","Castanea_sativa","Corylus_avellana","Fagus_sylvatica","Fraxinus_excelsior","Ilex_aquifolium","Pinus_sylvestris","Populus_nigra","Prunus_avium","Sorbus_aucuparia","TAxus_baccata","Quercus_petraea","Quercus_robur","Quercus_rubra"),
-  "1A" = c(2,1), "1B" = c(NA,1), "1C" = c(NA,NA)
-)))
+  species = c("Acer_pseudoplatanus","Alnus_glutinosa","Betula_pendula","Betula_pubescent","Carpinus_betulus","Castanea_sativa","Corylus_avellana","Fagus_sylvatica","Fraxinus_excelsior","Ilex_aquifolium","Pinus_sylvestris","Populus_nigra","Prunus_avium","Sorbus_aucuparia","Taxus_baccata","Quercus_petraea","Quercus_robur","Quercus_rubra"),
+  "1A" = c(NA,NA,0,NA,NA,0,NA,1,NA,NA,NA,NA,1,NA,NA,1,NA,2), "1B" = c(NA,NA,1,NA,), "1C" = c(1,2,NA,NA,), "2A" = c(1,NA,2,NA,) , "2B" = (NA,NA,2,NA,) , "2C" = c(1,NA,NA,NA,) ,"2D"=c(2,2,NA,1,),"3A"=c(NA,2,NA,NA),"3B"=c(1,NA,NA,NA,),"3C"=c(1,NA,NA,NA,),"4A"=c(NA,NA,1,NA,),"4B"=c(1,NA,NA,NA,),"4C"=c(1,NA,NA,1,)
+  )))
 
 pander::pander(sample,
                caption = "Exemple de table de contingence à double entrée.")
